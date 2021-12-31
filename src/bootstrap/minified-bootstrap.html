@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Remove Unused Bootstrap</title>
-    <link rel="stylesheet" href="css/clean-bootstrap.min.css">
+    <title>Minified Bootstrap</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
 <div class="container">
@@ -23,9 +23,9 @@
     </ul>
     <div class="row">
         <div class="col-12 m-2 bg-info">
-            In this test we are using only the css and js that is needed for our website. This was determined by running
-            the website through an analysis to only return back the css that is used by the site. For my test I used the
-            site https://purifycss.online/ to get only my used css.
+            In this test we are using the minified css and js that is downloadable from the bootstrap website. We could
+            use the CDN here, but we want to use the same testing methods for each test. So having it on the file system
+            will be similar to the other tests that we will do.
             
             We will use some standard bootstrap components that many people use on a site including navigation, layout, buttons 
             and accordions. Examples are taken from the bootstrap website.
@@ -40,7 +40,7 @@
     <div class="row">
         <div class="col-12">
             <div class="text-center">
-                <img height="500px" src="img/large-image.jpg" class="rounded img-fluid">
+                <img height="500px" src="/img/large-image.jpg" class="rounded img-fluid">
             </div>
         </div>
     </div>
@@ -94,5 +94,5 @@
     <button type="button" class="btn btn-link">Link</button>
 </div>
 </body>
-<script src="js/bootstrap.js"></script>
+<script src="/js/bootstrap.min.js"></script>
 </html>

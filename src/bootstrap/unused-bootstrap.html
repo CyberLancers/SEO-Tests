@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>No Bootstrap</title>
+    <title>Remove Unused Bootstrap</title>
+    <link rel="stylesheet" href="/css/clean-bootstrap.min.css">
 </head>
 <body>
 <div class="container">
@@ -22,9 +23,12 @@
     </ul>
     <div class="row">
         <div class="col-12 m-2 bg-info">
-            In this test we are doing a baseline of the HTML that we are using in other tests, but we are not including the CSS or the JS files
-            for Bootstrap. This will help give us a baseline of how the server is scoring so we can take into account what 
-            affect Bootstrap has outside of server factors.
+            In this test we are using only the css and js that is needed for our website. This was determined by running
+            the website through an analysis to only return back the css that is used by the site. For my test I used the
+            site https://purifycss.online/ to get only my used css.
+            
+            We will use some standard bootstrap components that many people use on a site including navigation, layout, buttons 
+            and accordions. Examples are taken from the bootstrap website.
         </div>
         <div class="col-6">
             This is the first column
@@ -36,7 +40,7 @@
     <div class="row">
         <div class="col-12">
             <div class="text-center">
-                <img height="500px" src="img/large-image.jpg" class="rounded img-fluid">
+                <img height="500px" src="/img/large-image.jpg" class="rounded img-fluid">
             </div>
         </div>
     </div>
@@ -90,4 +94,5 @@
     <button type="button" class="btn btn-link">Link</button>
 </div>
 </body>
+<script src="/js/bootstrap.js"></script>
 </html>
